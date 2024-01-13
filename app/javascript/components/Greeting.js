@@ -13,7 +13,7 @@ const Greeting = () => {
   return (
     <div>
     <h1>This is Greeting Message!!</h1>
-      {message} 
+      <h4>{message}</h4>
     </div>
   )
 };

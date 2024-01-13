@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const messageUrl = '/api/v1/messages';
+const messageUrl = 'http://localhost:3000/api/v1/messages';
 const getGreetingMessage = createAsyncThunk('messages/getGreetingMessage', async () => {
   const result = await axios.get(messageUrl);
   return result.data;
